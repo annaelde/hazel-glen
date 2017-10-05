@@ -1,0 +1,32 @@
+<events>
+	<event>
+		<name>Annual Meeting</name>
+		<date>07-11-2017</date>
+		<sortDate>20171107</sortDate>
+		<time>11:00AM</time>
+		<snippet>We'll be meeting by the Retention Pond on July 10th at 11AM for our annual meeting.</snippet>
+		<content>Donec elit odio, molestie sed lorem ut, tristique porttitor dui. Nulla eu diam vitae nulla sodales laoreet. Phasellus placerat convallis congue. Maecenas pellentesque mi ac pharetra interdum. Mauris vel metus vulputate, blandit enim id, vestibulum enim. Nulla nec efficitur velit. Cras consectetur vestibulum urna et semper. Aenean finibus neque et augue mollis facilisis.</content>
+		<image>images/meeting.jpg</image>
+		<imageDesc>A cartoon of two people talking in a meeting.</imageDesc>
+	</event>
+	<event>
+		<name>Summer Festival</name>
+		<date>06-12-2017</date>
+		<sortDate>20170612</sortDate>
+		<time>2:00PM</time>
+		<snippet>Our summer festival is coming up. Hang out with your neighbors and eat some BBQ!</snippet>
+		<content>Donec elit odio, molestie sed lorem ut, tristique porttitor dui. Nulla eu diam vitae nulla sodales laoreet. Phasellus placerat convallis congue. Maecenas pellentesque mi ac pharetra interdum. Mauris vel metus vulputate, blandit enim id, vestibulum enim. Nulla nec efficitur velit. Cras consectetur vestibulum urna et semper. Aenean finibus neque et augue mollis facilisis.</content>
+		<image>images/summer-fest.jpg</image>
+		<imageDesc>A bowl of delicious BBQ and corn-on-the-cob.</imageDesc>
+	</event>
+	<event>
+		<name>Neighborhood Clean-Up</name>
+		<date>07-14-2017</date>
+		<sortDate>20170714</sortDate>
+		<time>11:00AM</time>
+		<snippet>We're organizing a clean-up of the area around our neighborhood.</snippet>
+		<content>Donec elit odio, molestie sed lorem ut, tristique porttitor dui. Nulla eu diam vitae nulla sodales laoreet. Phasellus placerat convallis congue. Maecenas pellentesque mi ac pharetra interdum. Mauris vel metus vulputate, blandit enim id, vestibulum enim. Nulla nec efficitur velit. Cras consectetur vestibulum urna et semper. Aenean finibus neque et augue mollis facilisis.</content>
+		<image>images/cleanup.jpg</image>
+		<imageDesc>Artistically drawn signs telling people to volunteer.</imageDesc>
+	</event>
+</events>

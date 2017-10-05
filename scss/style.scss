@@ -1,0 +1,649 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+/* Variables */
+$background: #fff;
+$body-text-color: #000;
+$heading-color: #4b5939;
+$link-color: #53707e;
+$title-color: #9b6026;
+$accent-color: #809962;
+$link-visited-color: #5c6e46;
+$link-hover-color: #8d4709;
+$logo-height: 338px;
+$logo-width: 465px;
+$body-font: "Open Sans", sans-serif;
+$heading-font: 'Libre Baskerville', serif;
+$heading-margin: 10px 0;
+$p-margin: 10px;
+$title-size: 50px;
+$h1-size: 30px;
+$h2-size: 26px;
+$h3-size: 22px;
+$h4-size: 20px;
+$p-size: 20px;
+$footer-size: 10px;
+$nav-horiz: 45px;
+$nav-vert: 235px;
+
+/** Nav bar for Anna Elde Codes */
+#back
+{
+	background: #db3069;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	font: 1.2em arcon, arial, sans-serif;
+	height: 30px;
+	padding-left: 1em;
+    position: fixed;
+    top: 0;
+    left: 0;
+	width: 100%;
+	z-index: 10;
+}
+
+#back a
+{
+	color: #fafafa;
+	text-decoration: none;
+}
+
+@font-face
+{
+	/*License: http://anna.elde.codes/fonts/arcon/SIL Open Font License.txt */
+	font-family: arcon;
+	src: url(/fonts/arcon/Arcon-Regular.otf);
+}
+
+/* Mix Ins */
+@mixin button-style
+{
+	background: $accent-color;
+	border: 2pt solid $link-color;
+	padding: 10px;
+	text-align: center;
+}
+
+body
+{
+    padding-top: 30px;
+}
+
+/* Core Elements */
+h1, h2, h3
+{
+	color: $heading-color;
+	font-family: $heading-font;
+	font-weight: bolder;
+	margin: $heading-margin;
+}
+
+h1
+{
+	font-size: $h1-size;
+}
+
+h2
+{
+	font-size: $h2-size;
+}
+
+h3
+{
+	font-size: $h3-size;
+	max-width: 600px;
+}
+
+h4
+{
+	color: $body-text-color;
+	font: $h4-size $body-font;
+	margin: $heading-margin;
+}
+
+p
+{
+	font: $p-size $body-font;
+	margin-bottom: $p-margin;
+	max-width: 600px;
+}
+
+ul
+{
+	font: $p-size $body-font;
+	list-style-position: inside;
+	margin: 20px 5px;
+}
+
+li
+{
+	list-style-type: none;
+}
+
+main ul li:before
+{
+	color: $accent-color;
+	content: '\25AA \00a0 \00a0';
+}
+
+a
+{
+	color: $link-color;
+	text-decoration: none;
+
+	&:visited
+	{
+		color: $link-visited-color;
+	}
+
+	&:hover
+	{
+		color: $link-hover-color;
+	}
+
+	&:active
+	{
+		color: $link-hover-color;
+	}
+}
+
+/* Structural Elements */
+html
+{
+	margin: 0 auto;
+	max-width: 1200px;
+}
+
+body
+{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 135px $nav-horiz 1fr $footer-size * 3;
+}
+
+header, nav, footer
+{
+	align-self: center;
+	justify-self: center;
+}
+
+header
+{
+	grid-area: 1 / 1 / 2 / 2;
+
+	a
+	{
+		align-items: center;
+		display: flex;
+		flex-direction: row;
+		text-decoration: none;
+
+		div
+		{
+			margin: 10px;
+		}
+	}
+}
+
+nav
+{
+	grid-area: 2 / 1 / 3 / 2;
+	width: 100%;
+
+	ul
+	{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		list-style: none;
+		margin: 0;
+
+		li
+		{
+			border: 2pt solid $accent-color;
+			flex: 1;
+			margin: 0 10px;
+			text-align: center;
+			width: 10%;
+
+			a
+			{
+				color: $heading-color;
+				display: block;
+				font: $h3-size $heading-font;
+				line-height: 2;
+				min-height: 100%;
+				min-width: 100%;
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+main
+{
+	grid-area: 3 / 1 / 4 / 2;
+	overflow-x: hidden;
+}
+
+footer
+{
+	font: $footer-size $heading-font;
+	grid-area: -1 / 1 / -2 / 2;
+	margin: $footer-size 5px;
+	text-align: center;
+}
+
+/* Forms */
+label
+{
+	font: $p-size $body-font;
+	margin: 5px 0;
+}
+
+input[type="text"]
+{
+	border: 2px solid $accent-color;
+	display: block;
+	font: $p-size * 0.8 $body-font;
+	padding: 5px;
+}
+
+input[type="radio"]
+{
+	margin: 5px;
+}
+
+input[type="submit"]
+{
+	@include button-style;
+	color: #fff;
+	display: block;
+	font: $p-size $body-font;
+	margin: 20px 0 5px 0;
+	width: 100px;
+}
+
+textarea
+{
+	border: 2px solid $accent-color;
+	display: block;
+	font: $p-size * 0.8 $body-font;
+	min-width: 180px;
+	padding: 5px;
+	width: 75%;
+}
+
+/* IDs */
+#title
+{
+	align-self: center;
+	color: $title-color;
+	display: inline-block;
+	font: bolder $title-size $heading-font;
+	padding-top: 10px;
+}
+
+#logo
+{
+	display: inline-block;
+	height: $logo-height / 3;
+	width: $logo-width / 3;
+}
+
+#banner-container
+{
+	overflow: hidden;
+}
+
+#banner
+{
+	position: relative;
+	top: 25px;
+	width: 100%;
+	z-index: -1;
+}
+
+/* Classes */
+.button
+{
+	@include button-style;
+	cursor: pointer;
+	margin: 10px 5%;
+	width: 30%;
+
+	&:hover
+	{
+		background: $background;
+		border-color: $accent-color;
+
+		a
+		{
+			color: $heading-color;
+		}
+	}
+
+	a
+	{
+		color: $background;
+		font: $h3-size $heading-font;
+		text-align: center;
+		text-decoration: none;
+	}
+}
+
+.separator-container
+{
+	grid-row: none;
+	height: 50px;
+	overflow: hidden;
+}
+
+.separator, .separator-const
+{
+	display: none;
+	height: 40px;
+	margin: 5px 0;
+	width: 100%;
+}
+
+.separator-const
+{
+	display: block;
+}
+
+.content
+{
+	margin: 10px;
+}
+
+.sidebar
+{
+	margin: 10px;
+}
+
+.three-column, .two-column, .two-column-auto, .one-column, .single-row, .header-row
+{
+	display: grid;
+}
+
+.three-column
+{
+	grid-column-gap: 10px;
+	grid-template-columns: 2fr 1fr 1fr;
+}
+
+.two-column
+{
+	grid-column-gap: 10px;
+	grid-template-columns: 1fr 1fr;
+}
+
+.two-column-auto
+{
+	grid-column-gap: 10px;
+	grid-template-columns: auto auto;
+}
+
+.two-column-head
+{
+	grid-column: 1 / span 2;
+	padding-left: 10px;
+}
+
+.full-image
+{
+	display: block;
+}
+
+.mobile-image
+{
+	display: none;
+}
+
+.one-column
+{
+	grid-template-columns: 1fr;
+	justify-items: center;
+}
+
+.row-auto
+{
+	grid-auto-flow: row;
+}
+
+.center
+{
+	justify-content: center;
+}
+
+.left
+{
+	float: left;
+}
+
+.right
+{
+	float: right;
+}
+
+.flex-container
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.logo
+{
+	margin: 10px 20px 10px 0;
+}
+
+.event-image
+{
+	margin: 30px 10px;
+}
+
+.error
+{
+	color: red;
+	font: $p-size $body-font;
+	padding-left: 10px;
+}
+
+.confirmation
+{
+	color: green;
+	font: $p-size $body-font;
+}
+
+.active
+{
+	background: $heading-color;
+	color: $background;
+
+	&:visited
+	{
+		color: $background;
+	}
+
+	&:hover
+	{
+		color: $accent-color;
+	}
+}
+
+/* Media Queries */
+
+// Major Breakpoint -- Switch Main to Two Column //
+@media screen and (max-width: 830px)
+{
+	#title
+	{
+		font-size: $title-size * 0.75;
+	}
+
+	.three-column
+	{
+		grid-template-columns: 1fr 1fr;
+
+		.content
+		{
+			grid-column: 1 / span 2;
+		}
+	}
+
+	.separator
+	{
+		display: block;
+	}
+
+	.content .separator-container
+	{
+		margin-left: -10px;
+		margin-right: -10px;
+	}
+
+	.separator-container
+	{
+		grid-column: 1 / span 2;
+	}
+
+	.mobile-image
+	{
+		display: block;
+	}
+
+	.full-image
+	{
+		display: none;
+	}
+}
+
+// Tweak Point for Header/Nav Fit //
+@media screen and (max-width: 670px)
+{
+	#title
+	{
+		font-size: $title-size * 0.70;
+	}
+
+	#logo
+	{
+		display: inline-block;
+		height: $logo-height / 4;
+		width: $logo-width / 4;
+	}
+
+	nav ul li
+	{
+		margin: 0 5px;
+	}
+
+	nav ul li a
+	{
+		font-size: $h3-size * 0.9;
+	}
+}
+
+// Major Breakpoint -- Switch to Single Column //
+@media screen and (max-width: 600px)
+{
+	body
+	{
+		grid-template-rows: 100px $nav-vert 1fr $footer-size * 3;
+	}
+
+	header a
+	{
+		justify-content: center;
+		margin: 0px 10px;
+	}
+
+	#title
+	{
+		flex-basis: 50%;
+		flex-grow: 0;
+		flex-shrink: 1;
+		margin: 0;
+		text-align: center;
+	}
+
+	#logo
+	{
+		margin: 0;
+	}
+
+	nav ul
+	{
+		align-items: center;
+		flex-direction: column;
+	}
+
+	nav ul li
+	{
+		margin: 2px 0;
+		width: 95%;
+	}
+
+	.two-column, .two-column-auto
+	{
+		grid-template-columns: auto;
+	}
+
+	.three-column
+	{
+		grid-template-columns: 1fr;
+	}
+
+	.two-column-head
+	{
+		grid-column: 1 / span 1;
+	}
+
+	.content
+	{
+		grid-column: 1 / span 1;
+	}
+
+	.sidebar
+	{
+		grid-column: 1 / span 1;
+	}
+}
+
+// Tweakpoint -- Misc Layout //
+@media screen and (max-width: 460px)
+{
+	.event-image
+	{
+		display: none;
+	}
+}
+
+// Tweak Point -- Header Fit and Misc. for Mobile Display //
+@media screen and (max-width: 360px)
+{
+	body
+	{
+		grid-template-rows: 185px $nav-vert 1fr $footer-size * 3;
+	}
+
+	header a
+	{
+		display: block;
+	}
+
+	#logo
+	{
+		display: block;
+		margin: 5px auto 0 auto;
+	}
+
+	.logo
+	{
+		display: none;
+	}
+}

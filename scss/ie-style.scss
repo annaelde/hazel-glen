@@ -1,0 +1,135 @@
+/* A very special stylesheet for a very special browser */
+$footer-size: 10px;
+$nav-horiz: 45px;
+$nav-vert: 235px;
+
+/* Structural Elements */
+body
+{
+	display: -ms-grid;
+	-ms-grid-columns: 1fr;
+	-ms-grid-rows: 135px $nav-horiz 1fr $footer-size * 3;
+}
+
+header, nav, footer
+{
+	-ms-grid-column-align: center;
+	-ms-grid-row-align: center;
+}
+
+header
+{
+	-ms-grid-column: 1;
+	-ms-grid-row: 1;
+	-ms-grid-row-span: 1;
+	-ms-grid-column-span: 1;
+}
+
+nav
+{
+	-ms-grid-column: 1;
+	-ms-grid-row: 2;
+	-ms-grid-row-span: 1;
+	-ms-grid-column-span: 1;
+}
+
+main
+{
+	-ms-grid-column: 1;
+	-ms-grid-row: 3;
+	-ms-grid-row-span: 1;
+	-ms-grid-column-span: 1;
+}
+
+footer
+{
+	-ms-grid-column: 1;
+	-ms-grid-row: 4;
+	-ms-grid-row-span: 1;
+	-ms-grid-column-span: 1;
+}
+
+.one-column
+{
+	margin: 0 auto;
+	max-width: 600px;
+}
+
+.two-column, .two-column-auto
+{
+	display: flex;
+	flex-flow: row;
+
+	.content
+	{
+		width: 60%;
+	}
+
+	.sidebar
+	{
+		width: 35%;
+	}
+
+	div	
+	{
+		margin: 0 10px;
+	}
+}
+
+.three-column
+{
+	display: flex;
+}
+
+@media screen and (max-width: 950px)
+{
+	.mobile-image
+	{
+		display: block;
+	}
+
+	.full-image
+	{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 830px)
+{
+	.three-column
+	{
+		display: block;
+	}
+
+}
+
+@media screen and (max-width: 600px)
+{
+	body
+	{
+		-ms-grid-rows: 100px $nav-vert 1fr $footer-size * 3;
+	}
+
+	.two-column, .two-column-auto
+	{
+		display: block;
+
+		.content
+		{
+			width: 100%;
+		}
+
+		.sidebar
+		{
+			width: 100%;
+		}
+	}
+}
+
+@media screen and (max-width: 360px)
+{
+	body
+	{
+		-ms-grid-rows: 185px $nav-vert 1fr $footer-size * 3;
+	}
+}

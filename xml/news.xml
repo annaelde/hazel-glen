@@ -1,0 +1,35 @@
+<news>
+<article>
+	<title>Neighborhood Watch</title>
+	<author>Anna Elde</author>
+	<date>01-02-2017</date>
+	<sortDate>20170201</sortDate>
+	<image>images/sanford-police-full.jpg</image>
+	<mobileImage>images/sanford-police-mobile.jpg</mobileImage>
+	<imageDesc>A police car belonging to the City of Sanford in front of their police station.</imageDesc>
+	<headline>We're organizing a neighborhood watch group with input from the Sanford Police Department.</headline>
+	<content>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis ullamcorper nibh, sed ornare elit pretium sed. Curabitur laoreet tortor risus, eget gravida erat facilisis a. Duis consequat ipsum arcu, eget aliquet enim molestie id. Curabitur libero augue, porttitor vitae urna vel, luctus bibendum orci. Ut vitae tempor elit, id fringilla turpis. Nunc neque sem, mattis interdum pulvinar id, accumsan accumsan est. Nullam nunc quam, porttitor id nulla nec, convallis elementum neque. Vivamus in dui vitae quam euismod mattis non non lorem. Cras egestas lacus ac molestie iaculis. Pellentesque semper sed nisl sit amet porttitor.</content>
+</article>
+<article>
+	<title>Lake Mary Senior Expo</title>
+	<author>Nils Elde</author>
+	<date>03-17-2017</date>
+	<sortDate>20170317</sortDate>
+	<image>images/seniors-full.jpg</image>
+	<mobileImage>images/seniors-mobile.jpg</mobileImage>
+	<imageDesc>Two happy seniors laughing together with a family member.</imageDesc>
+	<headline>There will be a Senior Expo at Lake Mary City Hall on April, 30th, 2017.</headline>
+	<content>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis ullamcorper nibh, sed ornare elit pretium sed. Curabitur laoreet tortor risus, eget gravida erat facilisis a. Duis consequat ipsum arcu, eget aliquet enim molestie id. Curabitur libero augue, porttitor vitae urna vel, luctus bibendum orci. Ut vitae tempor elit, id fringilla turpis. Nunc neque sem, mattis interdum pulvinar id, accumsan accumsan est. Nullam nunc quam, porttitor id nulla nec, convallis elementum neque. Vivamus in dui vitae quam euismod mattis non non lorem. Cras egestas lacus ac molestie iaculis. Pellentesque semper sed nisl sit amet porttitor.</content>
+</article>
+<article>
+	<title>SunRail Deals</title>
+	<author>Anna Elde</author>
+	<date>02-12-2017</date>
+	<sortDate>20170212</sortDate>
+	<image>images/sunrail-full.jpg</image>
+	<mobileImage>images/sunrail-mobile.jpg</mobileImage>
+	<imageDesc>An overhead view of a model train.</imageDesc>
+	<headline>Use SunRail to commute? There are some great deals you should know about.</headline>
+	<content>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis ullamcorper nibh, sed ornare elit pretium sed. Curabitur laoreet tortor risus, eget gravida erat facilisis a. Duis consequat ipsum arcu, eget aliquet enim molestie id. Curabitur libero augue, porttitor vitae urna vel, luctus bibendum orci. Ut vitae tempor elit, id fringilla turpis. Nunc neque sem, mattis interdum pulvinar id, accumsan accumsan est. Nullam nunc quam, porttitor id nulla nec, convallis elementum neque. Vivamus in dui vitae quam euismod mattis non non lorem. Cras egestas lacus ac molestie iaculis. Pellentesque semper sed nisl sit amet porttitor.</content>
+</article>
+</news>

@@ -1,0 +1,75 @@
+/* A very special stylesheet for a very special browser */
+/* Structural Elements */
+body {
+  display: -ms-grid;
+  -ms-grid-columns: 1fr;
+  -ms-grid-rows: 135px 45px 1fr 30px; }
+
+header, nav, footer {
+  -ms-grid-column-align: center;
+  -ms-grid-row-align: center; }
+
+header {
+  -ms-grid-column: 1;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column-span: 1; }
+
+nav {
+  -ms-grid-column: 1;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column-span: 1; }
+
+main {
+  -ms-grid-column: 1;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  -ms-grid-column-span: 1; }
+
+footer {
+  -ms-grid-column: 1;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  -ms-grid-column-span: 1; }
+
+.one-column {
+  margin: 0 auto;
+  max-width: 600px; }
+
+.two-column, .two-column-auto {
+  display: flex;
+  flex-flow: row; }
+  .two-column .content, .two-column-auto .content {
+    width: 60%; }
+  .two-column .sidebar, .two-column-auto .sidebar {
+    width: 35%; }
+  .two-column div, .two-column-auto div {
+    margin: 0 10px; }
+
+.three-column {
+  display: flex; }
+
+@media screen and (max-width: 950px) {
+  .mobile-image {
+    display: block; }
+  .full-image {
+    display: none; } }
+
+@media screen and (max-width: 830px) {
+  .three-column {
+    display: block; } }
+
+@media screen and (max-width: 600px) {
+  body {
+    -ms-grid-rows: 100px 235px 1fr 30px; }
+  .two-column, .two-column-auto {
+    display: block; }
+    .two-column .content, .two-column-auto .content {
+      width: 100%; }
+    .two-column .sidebar, .two-column-auto .sidebar {
+      width: 100%; } }
+
+@media screen and (max-width: 360px) {
+  body {
+    -ms-grid-rows: 185px 235px 1fr 30px; } }
