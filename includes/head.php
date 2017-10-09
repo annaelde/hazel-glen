@@ -1,7 +1,7 @@
 <?php
 
-// Same as error_reporting(E_ALL);
-ini_set('error_reporting', E_ALL);
+// Turn off all error reporting
+error_reporting(0);
 
 ?>
 
