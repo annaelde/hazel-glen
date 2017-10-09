@@ -48,7 +48,7 @@ include($_SERVER['DOCUMENT_ROOT']."includes/head.php"); ?>
 			  	if ($send)
 		  		{
 		  			$submission = $email." wants to subscribe to our newsletter!";
-					// mail('hazelglenhomeowners@gmail.com', "Newsletter Subscription | Hazel Glen", $submission);
+					// mail('example@example.com', "Newsletter Subscription | Hazel Glen", $submission);
 		  			$confirmation = "Your email has been subscribed to our newsletter!";
 		  		}
 			}

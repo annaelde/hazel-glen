@@ -6,11 +6,11 @@ include($_SERVER['DOCUMENT_ROOT']."includes/head.php"); ?>
 	<div class="sidebar">
 		<h1>Contact Us</h1>
 			<h2>Phone</h2>
-			<p><a href="tel:5555555555">555-555-5555</a></p>
+			<p><a href="tel:5557008000">555-700-8000</a></p>
 			<h2>Mailing Address</h2>
 			<p>Hazel Glen, Sanford, FL 32773</p>
 			<h2>Email</h2>
-			<p><a href="mailto:info@hazelglen.org">info@hazelglen.org</a></p>
+			<p><a href="mailto:example@example.com">example@example.com</a></p>
 	</div>
 	<div class="content">
 		<h1>Send a Message</h1>
@@ -77,7 +77,7 @@ include($_SERVER['DOCUMENT_ROOT']."includes/head.php"); ?>
 	  		if ($send)
 	  		{
 	  			$submission = "Subject: $subject\n\nName: $name\n\nEmail: $email\n\nProperty: $address\n\nComment: $comment\n\nSubscribe to Newsletter: $newsletter";
-	  			// mail('', "Contact Form | Hazel Glen", $submission);
+	  			// mail('example@example.com', "Contact Form | Hazel Glen", $submission);
 	  			$confirmation = "Thank you for your message! We'll contact you soon.";
 	  		}
 

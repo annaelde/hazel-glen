@@ -6,7 +6,7 @@
 //     if ($email != FALSE)
 //     {
 // 	    $message = $email." wants to subscribe to our newsletter!";
-//         mail('hazelglenhomeowners@gmail.com', "Newsletter Subscription | Hazel Glen", $message);
+//         mail('example@example.com', "Newsletter Subscription | Hazel Glen", $message);
 //     }
 // }
 ?>

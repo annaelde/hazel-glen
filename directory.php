@@ -32,7 +32,7 @@ include($_SERVER['DOCUMENT_ROOT']."includes/head.php"); ?>
 		</div>
 		<div>
 			<h3>Phone</h3>
-			<p><a href="tel:4074329333">4074329333</a></p>
+			<p><a href="tel:5552001000">5552001000</a></p>
 		</div>
 	</div>
 	<p>Green Lawncare provides the best lawncare services in the Sanford area. Call them for a quote.</p>
