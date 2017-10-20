@@ -1,7 +1,7 @@
 <?php $title = "Hazel Glen Community | About";
 $description = "Learn about Hazel Glen, including information about our homeowners association.";
 $newsletter = true;
-include($_SERVER['DOCUMENT_ROOT']."includes/head.php"); ?>
+include($_SERVER['DOCUMENT_ROOT']."/includes/head.php"); ?>
     <div class="three-column row-auto">
 		<div class="content">
 			<h1>Board</h1>
@@ -34,4 +34,4 @@ include($_SERVER['DOCUMENT_ROOT']."includes/head.php"); ?>
 			<p>The bylaws for our homeowners association are now available online. <a href="bylaws.pdf">View our bylaws here.</a></p>
 		</div>
 	</div>
-<?php include($_SERVER['DOCUMENT_ROOT']."includes/footer.php"); ?>
+<?php include($_SERVER['DOCUMENT_ROOT']."/includes/footer.php"); ?>

@@ -2,7 +2,7 @@
 $description = "Hazel Glen is a small community in Sanford, Florida. Learn more about us and our homeowners association.";
 $newsletter = true;
 $banner = true;
-include($_SERVER['DOCUMENT_ROOT']."includes/head.php"); ?>
+include($_SERVER['DOCUMENT_ROOT']."/includes/head.php"); ?>
 	<div id="banner-container"><img id="banner" src="images/sign.png" alt="The sign at the entrance to our community." /></div>
 	<div class="three-column row-auto">
 		<div class="content">
@@ -42,4 +42,4 @@ include($_SERVER['DOCUMENT_ROOT']."includes/head.php"); ?>
 			?>
 		</div>
 	</div>
-<?php include($_SERVER['DOCUMENT_ROOT']."includes/footer.php"); ?>
+<?php include($_SERVER['DOCUMENT_ROOT']."/includes/footer.php"); ?>

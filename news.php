@@ -1,7 +1,7 @@
 <?php $title = "Hazel Glen Community | News";
 $description = "Find out what's happening in our neighborhood and download our seasonal newsletter.";
 $newsletter = true;
-include($_SERVER['DOCUMENT_ROOT']."includes/head.php"); ?>
+include($_SERVER['DOCUMENT_ROOT']."/includes/head.php"); ?>
 <div class="two-column-auto row-auto">
 	<div class="content">
 		<h1>Recent News</h1>
@@ -68,4 +68,4 @@ include($_SERVER['DOCUMENT_ROOT']."includes/head.php"); ?>
 		</form>
 	</div>
 </div>
-<?php include($_SERVER['DOCUMENT_ROOT']."includes/footer.php"); ?>
+<?php include($_SERVER['DOCUMENT_ROOT']."/includes/footer.php"); ?>

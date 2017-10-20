@@ -1,7 +1,7 @@
 <?php $title = "Hazel Glen Community | Business Directory";
 $description = "Connect with small business owners in our community using our business directory.";
 $newsletter = true;
-include($_SERVER['DOCUMENT_ROOT']."includes/head.php"); ?>
+include($_SERVER['DOCUMENT_ROOT']."/includes/head.php"); ?>
 <div class="one-column row-auto">
 	<div class="content">
 	<h1>Business Directory</h1>
@@ -38,4 +38,4 @@ include($_SERVER['DOCUMENT_ROOT']."includes/head.php"); ?>
 	<p>Green Lawncare provides the best lawncare services in the Sanford area. Call them for a quote.</p>
 	</div>
 </div>
-<?php include($_SERVER['DOCUMENT_ROOT']."includes/footer.php"); ?>
+<?php include($_SERVER['DOCUMENT_ROOT']."/includes/footer.php"); ?>

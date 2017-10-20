@@ -1,7 +1,7 @@
 <?php $title = "Hazel Glen Community | Events";
 $description = "Find out about future community gatherings and homeowners association meetings at Hazel Glen.";
 $newsletter = true;
-include($_SERVER['DOCUMENT_ROOT']."includes/head.php"); ?>
+include($_SERVER['DOCUMENT_ROOT']."/includes/head.php"); ?>
 <div class="one-column center row-auto">
 	<div class="content">
 	<h1>Events</h1>
@@ -19,4 +19,4 @@ include($_SERVER['DOCUMENT_ROOT']."includes/head.php"); ?>
 	print $styledXML->saveHTML();
 	?>
 </div>
-<?php include($_SERVER['DOCUMENT_ROOT']."includes/footer.php"); ?>
+<?php include($_SERVER['DOCUMENT_ROOT']."/includes/footer.php"); ?>
